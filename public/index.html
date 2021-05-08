@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: black; color: grey;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="nick" placeholder="Nickname">
+  <button onclick="setNickname()">Register</button><br><br>
+  <textarea id="messagebox" cols="80" rows="2" placeholder="Send message"></textarea><br><br>
+  <input type="text" id="selectedUser" placeholder="Selected user" required></input>
+  <button onclick="sendMsg()">Send</button>
+  <button onclick="sendSouffle()">Souffle</button>
+  <button onclick="sendAnnouncement()">Announcement</button>
+  <button onclick="takeNote()">Note</button><br><br>
+
+  <h3>Online Users</h3>
+  <ul id="onlineUsersList"></ul>
+  <h3>All Users</h3>
+  <ul id="allUsersList"></ul><br>
+  <ul id="allUsersMessageList"></ul><br>
+
+  <h2>Chat</h2>
+  <ul id="messages"></ul><br>
+  <h4>Offline And Online Information</h4>
+  <ul id="OffOnInfo"></ul><br>
+  <h3>Offline Messages List</h3>
+  <ul id="OfflineMessageUserList"></ul><br>
+  <ul id="OfflineMessagesList"></ul><br>
+  
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="./browser.js"></script>
+</html>
