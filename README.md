@@ -7,7 +7,7 @@
  - Onlie Users List
  - Offline Messages List
 
-## Kullanılan Teknolojiler
+## Used Technologies
  - socket io
  - express
  - mongodb
